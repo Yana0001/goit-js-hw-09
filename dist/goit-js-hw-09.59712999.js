@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"gzrwE":[function(require,module,exports) {
+})({"aIz9c":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "6ef978a552e3b619";
+module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, importScripts */ /*::
 import type {
   HMRAsset,
@@ -502,33 +502,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"cYUEh":[function(require,module,exports) {
-const startButton = document.querySelector("[data-start]");
-const stopButton = document.querySelector("[data-stop]");
-const body = document.querySelector("body");
-startButton.addEventListener("click", onStartBtnClick);
-stopButton.addEventListener("click", onStopBtnClick);
-// змінна яка зупиняє таймер що змінює колір фону
-let changeColorInt = null;
-// змінна яка затримує зміну кольору
-let colorDelay = 1000;
-function changeBackgroundColor() {
-    document.body.style.backgroundColor = getRandomHexColor();
-}
-function onStartBtnClick() {
-    startButton.disabled = true;
-    changeColorInt = setInterval(()=>{
-        changeBackgroundColor();
-    }, colorDelay);
-}
-function onStopBtnClick() {
-    startButton.disabled = false;
-    clearInterval(changeColorInt);
-}
-function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+},{}],"4M6V8":[function(require,module,exports) {
 
-},{}]},["gzrwE","cYUEh"], "cYUEh", "parcelRequired7c6")
+},{}]},["aIz9c","4M6V8"], "4M6V8", "parcelRequired7c6")
 
-//# sourceMappingURL=01-color-switcher.52e3b619.js.map
+//# sourceMappingURL=goit-js-hw-09.59712999.js.map
